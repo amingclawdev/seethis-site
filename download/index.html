@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Download SeeThis for Mac</title>
+  <meta name="description" content="Download the free SeeThis beta for Apple Silicon Macs (macOS 14.2 or later).">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://seethis.dev/download/">
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="/assets/site.css?v=11">
+  <!-- Fallback redirect if JavaScript is off. Kept slower than the script so analytics can record the visit first. -->
+  <meta http-equiv="refresh" content="3; url=https://github.com/amingclawdev/seethis/releases/download/v0.1.1-beta.1/SeeThis-0.1.1-beta.1-macos-arm64-release.dmg">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="30" height="30">SeeThis</a>
+    </div>
+  </header>
+  <main class="wrap article">
+    <section class="hero">
+      <h1>Your download is starting…</h1>
+      <p class="lead">SeeThis 0.1.1 beta for Apple Silicon Macs, macOS 14.2 or later. If nothing happens, use one of the links below.</p>
+      <div class="cta">
+        <a class="btn" id="dmg" href="https://github.com/amingclawdev/seethis/releases/download/v0.1.1-beta.1/SeeThis-0.1.1-beta.1-macos-arm64-release.dmg">Download DMG</a>
+        <a class="btn ghost" href="https://github.com/amingclawdev/seethis/releases/download/v0.1.1-beta.1/SeeThis-0.1.1-beta.1-macos-arm64-release.zip">Download ZIP</a>
+      </div>
+      <h2>After downloading</h2>
+      <ol>
+        <li>Optional: compare the file's SHA-256 with <a href="https://github.com/amingclawdev/seethis/releases/download/v0.1.1-beta.1/SHA256SUMS">SHA256SUMS</a>.</li>
+        <li>Move SeeThis.app to Applications and open it.</li>
+        <li>Allow <strong>Input Monitoring</strong> and <strong>Screen Recording</strong> in System Settings → Privacy &amp; Security.</li>
+        <li>Hold <kbd>⌥</kbd> <kbd>A</kbd> to turn on marking, drag around something with the mouse or a three-finger trackpad drag, then release <kbd>⌥</kbd> <kbd>A</kbd>.</li>
+      </ol>
+      <p class="note">Release notes and all files: <a href="https://github.com/amingclawdev/seethis/releases/tag/v0.1.1-beta.1">GitHub release v0.1.1-beta.1</a> · <a href="https://github.com/amingclawdev/seethis/blob/main/docs/INSTALL.md">Installation guide</a></p>
+    </section>
+  </main>
+  <script>
+    // Give the page view a moment to be recorded, then start the download.
+    setTimeout(function () {
+      window.location.replace(document.getElementById('dmg').href);
+    }, 1200);
+  </script>
+</body>
+</html>

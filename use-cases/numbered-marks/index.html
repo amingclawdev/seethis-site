@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Point an AI agent at several spots in one message | SeeThis</title>
+  <meta name="description" content="How to give Claude Code, Codex or any AI chat feedback on several parts of your screen at once: numbered marks in one SeeThis reference, and a one-line message.">
+  <link rel="canonical" href="https://seethis.dev/use-cases/numbered-marks/">
+  <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Point an AI agent at several spots in one message">
+  <meta property="og:description" content="Numbered marks in one SeeThis reference, and a one-line message.">
+  <meta property="og:url" content="https://seethis.dev/use-cases/numbered-marks/">
+  <meta property="og:image" content="https://seethis.dev/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/site.css?v=11">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Point an AI agent at several spots on your screen in one message",
+    "tool": [{ "@type": "HowToTool", "name": "SeeThis for Mac" }],
+    "step": [
+      { "@type": "HowToStep", "text": "Hold Option+A to turn on marking, then drag with the mouse or trackpad to circle the first spot and write 1 next to it." },
+      { "@type": "HowToStep", "text": "Keep holding Option+A, circle the second spot and write 2 next to it." },
+      { "@type": "HowToStep", "text": "Release Option+A. The reference link is copied to the clipboard automatically; paste it into your agent." },
+      { "@type": "HowToStep", "text": "Send one short message that refers to 1 and 2." }
+    ]
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="30" height="30">SeeThis</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/#how">How it works</a>
+        <a href="https://github.com/amingclawdev/seethis">GitHub</a>
+        <a class="btn small" href="/download/">Download</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap article">
+    <p class="crumb"><a href="/">SeeThis</a> / Use cases</p>
+    <section class="hero">
+      <h1>Point an AI agent at several spots in one message</h1>
+      <p class="lead">Two circled spots, a 1 and a 2, and one line of text. The agent answered each point on its own.</p>
+    </section>
+    <figure class="shot wide">
+      <a href="/assets/use-case-numbered-marks.png"><img src="/assets/use-case-numbered-marks.png" width="2400" height="1340" alt="Left: a document with a hand-drawn circle 1 on the value proposition and circle 2 on Channels. Right: the pasted SeeThis reference link, the one-line message, and the agent's reply addressing point 1 and point 2 separately."></a>
+      <figcaption>Left: the two numbered marks. Right: the reference pasted into the agent, the one-line message, and a separate answer for each point. A real session from October 14, 2026. The 127.0.0.1 link is copied to the clipboard automatically when ⌥A is released and only works on this Mac. A third party's name is redacted.</figcaption>
+    </figure>
+
+    <h2>The situation</h2>
+    <p>When you review a document, a design or a dashboard with an AI agent, your feedback is usually about more than one place. Describing each place in words is slow, and the agent still has to guess which part you meant.</p>
+    <p>I was reviewing a one-page business plan with an AI agent. I had two separate thoughts: one sentence was really a use case worth showing on its own, and one section raised a question about whether to build a website for analytics and SEO.</p>
+
+    <h2>What I did</h2>
+    <ol>
+      <li>Held <kbd>⌥</kbd> <kbd>A</kbd> to turn on marking, then dragged with the left mouse button to circle the sentence, wrote <strong>1</strong> next to it and underlined the exact words.</li>
+      <li>Still holding <kbd>⌥</kbd> <kbd>A</kbd>, circled the second section and wrote <strong>2</strong>, so both marks went into the same reference.</li>
+      <li>Released <kbd>⌥</kbd> <kbd>A</kbd>. SeeThis copied the reference link to the clipboard automatically, so I pasted it into the agent with one line:</li>
+    </ol>
+    <div class="quote">number 1 is a use case, number 2 will it be better to create websites so that it can be used to do statistics and seo</div>
+    <p>The agent matched point 1 to the first mark and point 2 to the second, answered both, and updated the document. It did not need me to explain where either spot was.</p>
+
+    <h2>Why it works</h2>
+    <ul>
+      <li><strong>The mark says where.</strong> The reference carries the exact area you marked, in the app and window you marked it in.</li>
+      <li><strong>The number links the mark to your words.</strong> One message can carry several instructions without “the second paragraph from the top, on the left”.</li>
+      <li><strong>An underline narrows it down.</strong> Inside a circled area, an underline shows the exact words you mean.</li>
+    </ul>
+
+    <h2>Tips</h2>
+    <ul>
+      <li>Keep each mark around one idea. Two small circles are clearer than one big one.</li>
+      <li>Agents on the same Mac, such as Claude Code or Codex, can read the local reference URL. For web chats, copy the marked image from Inspector.</li>
+      <li>A capture includes the whole display. Hide private windows before you mark.</li>
+    </ul>
+
+    <section>
+      <h2>Try it</h2>
+      <p>SeeThis is free and open source for Apple Silicon Macs.</p>
+      <div class="cta"><a class="btn" href="/download/">Download for Mac</a><a class="btn ghost" href="/">Back to SeeThis</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <div><a href="/">Home</a><a href="https://github.com/amingclawdev/seethis">GitHub</a><a href="https://github.com/amingclawdev/seethis/blob/main/PRIVACY.md">Privacy</a></div>
+      <div>© 2026 SeeThis contributors</div>
+    </div>
+  </footer>
+</body>
+</html>
