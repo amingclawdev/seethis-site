@@ -102,6 +102,9 @@ details p { color: var(--ink-muted); margin: 10px 0 0; }
 
 figure.shot { margin: 8px 0 18px; }
 figure.shot img { display: block; width: 100%; height: auto; border-radius: var(--radius); border: 1px solid var(--line); }
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.split figure.shot { margin: 0; }
+figure.shot.cutout img { border: 0; border-radius: 0; filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.5)); }
 figure.shot figcaption { color: var(--ink-faint); font-size: 14px; margin-top: 10px; }
 
 /* Article pages */
@@ -118,7 +121,7 @@ figure.shot figcaption { color: var(--ink-faint); font-size: 14px; margin-top: 1
 .site-footer a:hover { color: var(--ink); }
 
 @media (max-width: 820px) {
-  .grid.three, .grid.two, .usecase { grid-template-columns: 1fr; }
+  .grid.three, .grid.two, .usecase, .split { grid-template-columns: 1fr; }
   .nav a:not(.btn) { display: none; }
   .hero { padding-top: 48px; }
 }
