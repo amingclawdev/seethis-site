@@ -13,7 +13,7 @@
   <meta property="og:url" content="https://seethis.dev/use-cases/numbered-marks/">
   <meta property="og:image" content="https://seethis.dev/assets/og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="stylesheet" href="/assets/site.css?v=8">
+  <link rel="stylesheet" href="/assets/site.css?v=11">
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -45,10 +45,15 @@
     <p class="crumb"><a href="/">SeeThis</a> / Use cases</p>
     <section class="hero">
       <h1>Point an AI agent at several spots in one message</h1>
-      <p class="lead">When you review a document, a design or a dashboard with an AI agent, your feedback is usually about more than one place. Describing each place in words is slow, and the agent still has to guess which part you meant.</p>
+      <p class="lead">Two circled spots, a 1 and a 2, and one line of text. The agent answered each point on its own.</p>
     </section>
+    <figure class="shot wide">
+      <a href="/assets/use-case-numbered-marks.png"><img src="/assets/use-case-numbered-marks.png" width="2400" height="1340" alt="Left: a document with a hand-drawn circle 1 on the value proposition and circle 2 on Channels. Right: the pasted SeeThis reference link, the one-line message, and the agent's reply addressing point 1 and point 2 separately."></a>
+      <figcaption>Left: the two numbered marks. Right: the reference pasted into the agent, the one-line message, and a separate answer for each point. A real session from October 14, 2026. The 127.0.0.1 link is copied to the clipboard automatically when ⌥A is released and only works on this Mac. A third party's name is redacted.</figcaption>
+    </figure>
 
     <h2>The situation</h2>
+    <p>When you review a document, a design or a dashboard with an AI agent, your feedback is usually about more than one place. Describing each place in words is slow, and the agent still has to guess which part you meant.</p>
     <p>I was reviewing a one-page business plan with an AI agent. I had two separate thoughts: one sentence was really a use case worth showing on its own, and one section raised a question about whether to build a website for analytics and SEO.</p>
 
     <h2>What I did</h2>
@@ -59,10 +64,6 @@
     </ol>
     <div class="quote">number 1 is a use case, number 2 will it be better to create websites so that it can be used to do statistics and seo</div>
     <p>The agent matched point 1 to the first mark and point 2 to the second, answered both, and updated the document. It did not need me to explain where either spot was.</p>
-    <figure class="shot">
-      <a href="/assets/use-case-numbered-marks.png"><img src="/assets/use-case-numbered-marks.png" width="2400" height="1340" loading="lazy" alt="Left: a document with a hand-drawn circle 1 on the value proposition and circle 2 on Channels. Right: the pasted SeeThis reference link, the one-line message, and the agent's reply addressing point 1 and point 2 separately."></a>
-      <figcaption>A real session from October 14, 2026. The 127.0.0.1 link is the SeeThis reference, copied to the clipboard automatically when ⌥A is released; it only works on this Mac. A third party's name is redacted.</figcaption>
-    </figure>
 
     <h2>Why it works</h2>
     <ul>
