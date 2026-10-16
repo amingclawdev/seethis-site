@@ -1,0 +1,9 @@
+# Channel short links. Each path is counted separately in Cloudflare path analytics,
+# so traffic per channel is visible without client-side tracking.
+# 302 (not 301) so browsers do not cache the redirect and every click reaches the edge.
+/x    /  302
+/th   /  302
+/bs   /  302
+/rd   /  302
+/li   /  302
+/yt   /  302
