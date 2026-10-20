@@ -13,11 +13,13 @@ Static website for [SeeThis](https://github.com/amingclawdev/seethis), served at
 
 ## App Store release state
 
-The site currently says **approved — release in progress** for App Store 0.1.1 (build 1). The listing URL is https://apps.apple.com/us/app/seethis-visual-context/id6818581322; it is kept in a comment beside the Store card until public availability is confirmed, rather than sending visitors to an unavailable listing. GitHub v0.1.1-beta.1 remains available.
+App Store version **0.1.1 (build 1)** is publicly available as **SeeThis: Visual Context**. Its listing was confirmed available on October 20, 2026: https://apps.apple.com/us/app/seethis-visual-context/id6818581322. The site links directly to that listing. GitHub **v0.1.1-beta.1** remains a separate direct-download option.
 
-After the public listing is confirmed available for download:
+Public listing availability does not establish completed installation or first-launch validation.
 
-1. Update the release notice and distribution FAQ in `index.html`, and the availability sentence in `use-cases/numbered-marks/index.html`.
-2. In `download/index.html`, change the Store card from pending to available and add a clear App Store download action using the saved listing URL; update the meta description and remove conditional availability wording from the update guidance.
+For future release updates:
+
+1. Keep the home-page release notice, FAQ and structured version data in `index.html` consistent with the public listing.
+2. Update the Store card and metadata in `download/index.html`, and the availability sentence and CTA in `use-cases/numbered-marks/index.html`.
 3. Preserve separate Store and GitHub versions, data-migration limits and permission steps. Do not reinstate automatic redirects.
-4. Check the production listing and both download paths, then deploy through the reviewed `main` change. The local release-state edit alone does not establish Store availability.
+4. Check the production listing and both download paths, then deploy through the reviewed `main` change.
