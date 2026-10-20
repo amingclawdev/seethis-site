@@ -16,7 +16,7 @@
 
 * { box-sizing: border-box; }
 
-html { scroll-behavior: smooth; }
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 body {
   margin: 0;
@@ -60,6 +60,8 @@ h1 .mark::after { content: ""; position: absolute; left: -6px; right: -6px; bott
 .hero p.lead { max-width: 62ch; color: var(--ink-muted); margin: 0 0 28px; }
 .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
 .cta .meta { color: var(--ink-faint); font-size: 14px; flex-basis: 100%; margin-top: 6px; }
+.release-status { max-width: 68ch; padding: 14px 16px; border-left: 3px solid var(--cyan); background: var(--card); border-radius: 0 8px 8px 0; color: var(--ink-muted); font-size: 15px; margin: 24px 0 0; }
+.release-status strong { color: var(--ink); }
 
 /* Sections */
 section { padding: 56px 0; border-top: 1px solid var(--line); }
@@ -116,6 +118,19 @@ figure.shot figcaption { color: var(--ink-faint); font-size: 14px; margin-top: 1
 .article figure.wide { position: relative; left: 50%; transform: translateX(-50%); width: min(1040px, calc(100vw - 40px)); }
 .crumb { font-size: 14px; color: var(--ink-faint); margin: 32px 0 0; }
 .crumb a { color: var(--ink-faint); }
+
+/* Download choices */
+.downloads .hero { padding-bottom: 40px; }
+.downloads h1 { max-width: 18ch; }
+.download-options { align-items: stretch; }
+.download-options .card .eyebrow { color: var(--cyan); margin-bottom: 12px; }
+.download-options h2 { font-size: 27px; }
+.download-options .card .download-action { margin-top: 22px; }
+.download-options .card .note { margin-top: 18px; font-size: 14px; }
+.first-use-steps { max-width: 78ch; padding-left: 24px; color: var(--ink-muted); }
+.first-use-steps li { padding-left: 6px; margin-bottom: 18px; }
+.first-use-steps strong { color: var(--ink); }
+.downloads section > p:not(.eyebrow) { max-width: 78ch; color: var(--ink-muted); }
 
 /* Footer */
 .site-footer { border-top: 1px solid var(--line); padding: 36px 0 48px; color: var(--ink-faint); font-size: 14px; }

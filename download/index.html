@@ -4,43 +4,85 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Download SeeThis for Mac</title>
-  <meta name="description" content="Download the free SeeThis beta for Apple Silicon Macs (macOS 14.2 or later).">
-  <meta name="robots" content="noindex">
+  <meta name="description" content="Choose a SeeThis download for Apple Silicon Macs on macOS 14.2 or later. The GitHub beta is available now; the App Store version is approved and being released.">
   <link rel="canonical" href="https://seethis.dev/download/">
   <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="/assets/site.css?v=11">
-  <!-- Fallback redirect if JavaScript is off. Kept slower than the script so analytics can record the visit first. -->
-  <meta http-equiv="refresh" content="3; url=https://github.com/amingclawdev/seethis/releases/download/v0.1.1-beta.1/SeeThis-0.1.1-beta.1-macos-arm64-release.dmg">
+  <link rel="stylesheet" href="/assets/site.css?v=12">
 </head>
 <body>
   <header class="site-header">
     <div class="wrap">
       <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="30" height="30">SeeThis</a>
+      <nav class="nav" aria-label="Main">
+        <a href="/use-cases/numbered-marks/">A real use case</a>
+        <a href="#first-use">First-use steps</a>
+      </nav>
     </div>
   </header>
-  <main class="wrap article">
+  <main class="wrap downloads">
     <section class="hero">
-      <h1>Your download is starting…</h1>
-      <p class="lead">SeeThis 0.1.1 beta for Apple Silicon Macs, macOS 14.2 or later. If nothing happens, use one of the links below.</p>
-      <div class="cta">
-        <a class="btn" id="dmg" href="https://github.com/amingclawdev/seethis/releases/download/v0.1.1-beta.1/SeeThis-0.1.1-beta.1-macos-arm64-release.dmg">Download DMG</a>
-        <a class="btn ghost" href="https://github.com/amingclawdev/seethis/releases/download/v0.1.1-beta.1/SeeThis-0.1.1-beta.1-macos-arm64-release.zip">Download ZIP</a>
+      <p class="eyebrow">Free and open source · for Mac</p>
+      <h1>Choose your SeeThis download</h1>
+      <p class="lead">For Apple Silicon Macs on macOS 14.2 or later. Circle several places on your screen, then share one reference or marked image with your AI.</p>
+      <div class="grid two download-options">
+        <article class="card" id="app-store">
+          <p class="eyebrow">Mac App Store · version 0.1.1</p>
+          <h2>Approved. Release in progress.</h2>
+          <p>Apple has approved version 0.1.1 (build 1). It is being released and is not yet confirmed available for download.</p>
+          <!-- Enable the Store download action only after this public listing is available:
+               https://apps.apple.com/us/app/seethis-visual-context/id6818581322 -->
+          <p class="download-action"><strong>App Store download coming soon.</strong></p>
+          <p class="note">Prefer to start now? Use the GitHub beta. The App Store version will install and update through the Mac App Store once available.</p>
+        </article>
+        <article class="card" id="github">
+          <p class="eyebrow">GitHub · version 0.1.1-beta.1</p>
+          <h2>Download the beta now</h2>
+          <p>Developer ID signed and Apple notarized. Install directly from the DMG or ZIP; download future updates manually.</p>
+          <div class="cta download-action">
+            <a class="btn" href="https://github.com/amingclawdev/seethis/releases/download/v0.1.1-beta.1/SeeThis-0.1.1-beta.1-macos-arm64-release.dmg">Download DMG</a>
+            <a class="btn ghost" href="https://github.com/amingclawdev/seethis/releases/download/v0.1.1-beta.1/SeeThis-0.1.1-beta.1-macos-arm64-release.zip">Download ZIP</a>
+          </div>
+          <p class="note"><a href="https://github.com/amingclawdev/seethis/releases/download/v0.1.1-beta.1/SHA256SUMS">SHA256SUMS</a> · <a href="https://github.com/amingclawdev/seethis/releases/tag/v0.1.1-beta.1">Release notes</a></p>
+        </article>
       </div>
-      <h2>After downloading</h2>
-      <ol>
-        <li>Optional: compare the file's SHA-256 with <a href="https://github.com/amingclawdev/seethis/releases/download/v0.1.1-beta.1/SHA256SUMS">SHA256SUMS</a>.</li>
-        <li>Move SeeThis.app to Applications and open it.</li>
-        <li>Allow <strong>Input Monitoring</strong> and <strong>Screen Recording</strong> in System Settings → Privacy &amp; Security.</li>
-        <li>Hold <kbd>⌥</kbd> <kbd>A</kbd> to turn on marking, drag around something with the mouse or a three-finger trackpad drag, then release <kbd>⌥</kbd> <kbd>A</kbd>.</li>
+    </section>
+
+    <section id="first-use">
+      <h2>Your first two marks</h2>
+      <p class="section-lead">Try this on a document with no private content. A capture includes the entire selected display, so hide private windows and notifications first.</p>
+      <ol class="first-use-steps">
+        <li><strong>Install and open SeeThis.</strong> For the GitHub download, compare the file with the published <a href="https://github.com/amingclawdev/seethis/releases/download/v0.1.1-beta.1/SHA256SUMS">SHA256SUMS</a>, then move SeeThis.app to Applications and open it. Look for SeeThis in your menu bar.</li>
+        <li><strong>Allow the capture permissions.</strong> In System Settings → Privacy &amp; Security, allow <strong>Input Monitoring</strong> and <strong>Screen Recording</strong> for this copy of SeeThis. Reopen it if macOS asks. For Chrome tab/page context, allow Automation when prompted, then release the shortcut and start a fresh gesture.</li>
+        <li><strong>Circle two places.</strong> Hold <kbd>⌥</kbd> <kbd>A</kbd>, drag around the first place and write <strong>1</strong> beside it. Keep holding the shortcut, circle the second place and write <strong>2</strong>. Use a mouse drag, a trackpad click-and-drag, or enabled three-finger drag. Release the shortcut to create one reference.</li>
+        <li><strong>Share the right format.</strong> Use the copied local link for a tool on this Mac, or copy the marked image for a web chat, as shown below. Add a short message referring to <strong>1</strong> and <strong>2</strong>.</li>
       </ol>
-      <p class="note">Release notes and all files: <a href="https://github.com/amingclawdev/seethis/releases/tag/v0.1.1-beta.1">GitHub release v0.1.1-beta.1</a> · <a href="https://github.com/amingclawdev/seethis/blob/main/docs/INSTALL.md">Installation guide</a></p>
+      <div class="grid two">
+        <article class="card">
+          <h3>An agent on this Mac</h3>
+          <p>Paste the automatically copied reference into Claude Code, Codex or another local tool that can read it. SeeThis must be running, and the reference must not have expired or been deleted.</p>
+        </article>
+        <article class="card">
+          <h3>A web chat or remote assistant</h3>
+          <p>Choose <strong>Show Inspector…</strong> from the menu. Once the image is ready, select <strong>Copy marked image</strong>, check the whole image, then paste or attach it to your chat. Confirm an image preview appears. A <code>127.0.0.1</code> link will not work from another computer.</p>
+        </article>
+      </div>
+      <p><a href="/use-cases/numbered-marks/">See this workflow in a real business-plan review →</a></p>
+      <p class="note"><a href="https://github.com/amingclawdev/seethis/blob/main/docs/USAGE.md">Detailed usage guide</a> · <a href="https://github.com/amingclawdev/seethis/blob/main/docs/INSTALL.md">GitHub installation guide</a> · <a href="https://github.com/amingclawdev/seethis/blob/main/docs/CHROME.md">Chrome permissions and recovery</a></p>
+    </section>
+
+    <section id="switching">
+      <h2>Keeping references and switching versions</h2>
+      <p>References are stored locally. The defaults are <strong>7-day retention</strong> and <strong>up to 500 searchable references</strong>; adjust them in <strong>Open Settings… → Reference access</strong>.</p>
+      <p>The App Store version uses its own local data container. It does not automatically import the GitHub version’s references or settings, and permissions may need to be granted again. Before switching, copy or save any marked images you need to keep, quit the old copy, and open the version you intend to use.</p>
+      <p>For the GitHub version, install new releases manually. Once the App Store version is available, manage its updates through the Mac App Store.</p>
+      <p class="note"><a href="https://github.com/amingclawdev/seethis/blob/main/PRIVACY.md">Privacy and retention</a> · <a href="https://github.com/amingclawdev/seethis/blob/main/docs/TROUBLESHOOTING.md#store-variant-and-support-requests">Store data and support</a></p>
     </section>
   </main>
-  <script>
-    // Give the page view a moment to be recorded, then start the download.
-    setTimeout(function () {
-      window.location.replace(document.getElementById('dmg').href);
-    }, 1200);
-  </script>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div><a href="/">Home</a><a href="https://github.com/amingclawdev/seethis">GitHub</a><a href="https://github.com/amingclawdev/seethis/blob/main/PRIVACY.md">Privacy</a></div>
+      <div>© 2026 SeeThis contributors</div>
+    </div>
+  </footer>
 </body>
 </html>
