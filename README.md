@@ -11,11 +11,11 @@ Static website for [SeeThis](https://github.com/amingclawdev/seethis), served at
 
 `_redirects` maps `/x`, `/th`, `/bs`, `/rd`, `/li` and `/yt` (X, Threads, Bluesky, Reddit, LinkedIn, YouTube) to the home page with a 302. Use the matching link when posting on each channel; Cloudflare's top-paths analytics then shows visits per channel.
 
-## App Store release state
+## Release state
 
-App Store version **0.1.1 (build 1)** is publicly available as **SeeThis: Visual Context**. Its listing was confirmed available on October 20, 2026: https://apps.apple.com/us/app/seethis-visual-context/id6818581322. The site links directly to that listing. GitHub **v0.1.1-beta.1** remains a separate direct-download option.
+The site describes **0.1.5** (updated October 28, 2026). GitHub release **v0.1.5** (https://github.com/amingclawdev/seethis/releases/tag/v0.1.5) is published; the download page links its DMG, ZIP and SHA256SUMS. On the Mac App Store, 0.1.5 is in review; the public listing, **SeeThis: Visual Context** (https://apps.apple.com/us/app/seethis-visual-context/id6818581322), still has **0.1.1** until it is approved.
 
-Public listing availability does not establish completed installation or first-launch validation.
+The four scenario videos in `assets/scenarios/` are the v3 16:9 story masters from the SeeThis promo project (silent, reference access keys hidden), remuxed with `+faststart`; the posters are frames from the same files.
 
 For future release updates:
 

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>SeeThis: mark up your Mac screen for AI agents</title>
-  <meta name="description" content="Circle several places in a document, design or webpage and give your AI feedback in one message. Free and open source for Apple Silicon Macs.">
+  <meta name="description" content="Circle what you mean in any Mac app. Each mark gets a number and its own note, then your AI gets one link or one marked image. Free and open source for Apple Silicon Macs.">
   <link rel="canonical" href="https://seethis.dev/">
   <link rel="icon" href="/assets/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
@@ -23,17 +23,17 @@
   <meta name="twitter:description" content="Circle several places. Send one short message.">
   <meta name="twitter:image" content="https://seethis.dev/assets/og.png">
 
-  <link rel="stylesheet" href="/assets/site.css?v=12">
+  <link rel="stylesheet" href="/assets/site.css?v=13">
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "SeeThis",
-    "description": "A Mac app for visual feedback: circle several places and share a local reference with an agent on the same Mac, or a marked image with a web chat.",
+    "description": "A Mac app for visual feedback: circle and number several places, add a note to each, and share one local reference with an agent on the same Mac, or a marked image with a web chat.",
     "applicationCategory": "ProductivityApplication",
     "operatingSystem": "macOS 14.2 or later (Apple Silicon)",
-    "softwareVersion": "0.1.1",
+    "softwareVersion": "0.1.5",
     "license": "https://opensource.org/licenses/MIT",
     "url": "https://seethis.dev/",
     "downloadUrl": "https://seethis.dev/download/",
@@ -49,8 +49,8 @@
     <div class="wrap">
       <a class="brand" href="/"><img src="/assets/icon.svg" alt="" width="30" height="30">SeeThis</a>
       <nav class="nav" aria-label="Main">
+        <a href="#scenarios">Scenarios</a>
         <a href="#how">How it works</a>
-        <a href="/use-cases/numbered-marks/">Use case</a>
         <a href="#privacy">Privacy</a>
         <a href="https://github.com/amingclawdev/seethis">GitHub</a>
         <a class="btn small" href="/download/">Download</a>
@@ -64,41 +64,94 @@
         <p class="eyebrow">Free and open source · for Mac</p>
         <h1>Mark up your screen <span class="mark">like a printout.</span></h1>
         <p class="sub">Several points. One short message.</p>
-        <p class="lead">Circle a sentence, a section or a detail in any Mac app. Add handwritten numbers, then tell your AI what you mean in one message. Share a local reference with Claude Code or Codex on the same Mac, or a marked image with a web chat.</p>
+        <p class="lead">Circle what you mean in any Mac app. Each mark gets a number, and each number can carry a note, even across several tabs and apps. Then hand Claude Code or Codex one local link, or paste the marked image into any web chat.</p>
         <div class="cta">
-          <a class="btn" href="https://apps.apple.com/us/app/seethis-visual-context/id6818581322">Download on the Mac App Store</a>
-          <a class="btn ghost" href="/use-cases/numbered-marks/">See a real document review</a>
+          <a class="btn" href="/download/#github">Download SeeThis 0.1.5</a>
+          <a class="btn ghost" href="#scenarios">Watch four real sessions</a>
           <span class="meta">Apple Silicon · macOS 14.2 or later · free and open source</span>
         </div>
-        <p class="release-status"><strong>Now available on the Mac App Store.</strong> Version 0.1.1 is free for Apple Silicon Macs. Prefer a direct download? <a href="/download/#github">Get the signed and notarized GitHub beta →</a></p>
+        <p class="release-status"><strong>SeeThis 0.1.5 is out on GitHub.</strong> Signed and notarized by Apple, as a DMG or ZIP. On the Mac App Store, 0.1.5 is in review; until Apple approves it, the Store has version 0.1.1. <a href="/download/">Download options →</a></p>
       </div>
     </section>
 
-    <section id="usecase">
+    <section id="scenarios">
       <div class="wrap">
-        <p class="eyebrow">A real document review</p>
-        <h2>Two thoughts about a business plan. One message.</h2>
-        <p class="section-lead">Two circled spots, a 1 and a 2, and one line of text. The agent answered each point on its own.</p>
-        <figure class="shot">
-          <a href="/assets/use-case-numbered-marks.png"><img src="/assets/use-case-numbered-marks.png" width="2400" height="1340" loading="lazy" alt="Left: a document with a hand-drawn circle 1 on the value proposition and circle 2 on Channels. Right: the pasted SeeThis reference link, the one-line message, and the agent's reply addressing point 1 and point 2 separately."></a>
-          <figcaption>Left: the two numbered marks. Right: the reference pasted into the agent, the one-line message, and a separate answer for each point. A real session from October 14, 2026. The 127.0.0.1 link is copied to the clipboard automatically when ⌥A is released and only works on this Mac. A third party's name is redacted.</figcaption>
-        </figure>
-        <p class="section-lead">While reviewing a document with an agent, I circled a sentence and wrote 1 next to it, circled a section and wrote 2, then sent one line:</p>
-        <div class="quote">number 1 is a use case, number 2 will it be better to create websites so that it can be used to do statistics and seo</div>
-        <p class="section-lead">The agent matched each point to its mark and answered both. One message instead of two paragraphs of directions.</p>
-        <p><a href="/use-cases/numbered-marks/">Read the full use case →</a></p>
-      </div>
-    </section>
-
-    <section id="demo" class="flush">
-      <div class="wrap">
-        <div class="video-frame">
-          <video controls playsinline preload="metadata" poster="/assets/demo/SeeThis-landscape-v3-thumbnail.jpg" aria-label="SeeThis demo video">
-            <source src="/assets/demo/SeeThis-landscape-v3-public.mp4" type="video/mp4">
-            Your browser cannot play this video. <a href="/assets/demo/SeeThis-landscape-v3-public.mp4">Open the MP4</a> instead.
-          </video>
+        <p class="eyebrow">Four real sessions</p>
+        <h2>Say where once. Then just say the number.</h2>
+        <p class="section-lead">Screen recordings of SeeThis 0.1.5 at work: a trader asking ChatGPT, a broker checking a contract with an agent on the same Mac, and a designer and a front-end developer working with Codex.</p>
+        <div class="grid two scenarios">
+          <article class="card scenario">
+            <div class="video-frame">
+              <video controls muted playsinline preload="none" poster="/assets/scenarios/trader.jpg" aria-label="Trader scenario: marking two charts and asking ChatGPT">
+                <source src="/assets/scenarios/trader.mp4" type="video/mp4">
+                <a href="/assets/scenarios/trader.mp4">Open the MP4</a>
+              </video>
+            </div>
+            <p class="eyebrow">Trader · ChatGPT in the cloud</p>
+            <h3>Two charts, asked about by number</h3>
+            <p>Mark the gap, the volume and the 37.00 level on the daily chart, then the hourly tab. Each tab keeps its own marks. Copy the marked image from Inspector, paste it into ChatGPT and ask about 1, 2, 3 and 4. The answer follows your numbers.</p>
+            <p class="note">Demo data, not investment advice. Real, unedited ChatGPT reply.</p>
+          </article>
+          <article class="card scenario">
+            <div class="video-frame">
+              <video controls muted playsinline preload="none" poster="/assets/scenarios/broker.jpg" aria-label="Broker scenario: marking a listing and a contract, then handing the notes to an agent">
+                <source src="/assets/scenarios/broker.mp4" type="video/mp4">
+                <a href="/assets/scenarios/broker.mp4">Open the MP4</a>
+              </video>
+            </div>
+            <p class="eyebrow">Real estate broker · agent on this Mac</p>
+            <h3>Check the contract against the listing</h3>
+            <p>The listing is in Chrome, the contract in Preview. Mark the interior area and parking on the listing, turn on Append screenshots, and keep going on the contract: 3, 4, 5. Add a note to each number, close the note to copy the link, and paste it into your agent. It drafts an email that cites every note.</p>
+            <p class="note">Fictional listing and contract, not legal advice. Real AI draft, not sent.</p>
+          </article>
+          <article class="card scenario">
+            <div class="video-frame">
+              <video controls muted playsinline preload="none" poster="/assets/scenarios/designer.jpg" aria-label="Designer scenario: circling three poster changes for Codex, then one more on version 2">
+                <source src="/assets/scenarios/designer.mp4" type="video/mp4">
+                <a href="/assets/scenarios/designer.mp4">Open the MP4</a>
+              </video>
+            </div>
+            <p class="eyebrow">Designer · Codex</p>
+            <h3>Three poster changes, then one more</h3>
+            <p>Circle the sky, the sun and the cup on poster v1 and write a note for each. Paste the link into Codex: “Implement the notes.” Version 2 comes back. Open it next to v1. Still off? Mark 4 on v2 in the same request, and Codex fixes it by number.</p>
+            <p class="note">Fictional poster. Real Codex output.</p>
+          </article>
+          <article class="card scenario">
+            <div class="video-frame">
+              <video controls muted playsinline preload="none" poster="/assets/scenarios/frontend.jpg" aria-label="Front-end scenario: marking copy fixes on two pages of an event site for Codex">
+                <source src="/assets/scenarios/frontend.mp4" type="video/mp4">
+                <a href="/assets/scenarios/frontend.mp4">Open the MP4</a>
+              </video>
+            </div>
+            <p class="eyebrow">Front-end developer · Codex</p>
+            <h3>Four copy fixes on two pages</h3>
+            <p>Mark the date and the button on the homepage and add a note to each. Open the signup page with Append on, so the next marks are 3 and 4. Paste the link into Codex, which reads every shot, mark and note. When the event fills up, edit the notes and send the same link again.</p>
+            <p class="note">Fictional event site on a local demo server. Codex made the changes, not SeeThis.</p>
+          </article>
         </div>
-        <p class="note">This demo shows an earlier Inspector workflow. Current behavior is in the <a href="https://github.com/amingclawdev/seethis/blob/main/docs/USAGE.md">usage guide</a>. <a href="/assets/demo/SeeThis-portrait-v3-public.mp4">Portrait version</a>.</p>
+        <p class="note">Real screen recordings, without sound. Waiting is cut and some steps are sped up. Reference access keys are hidden. Another real session: <a href="/use-cases/numbered-marks/">two thoughts about a business plan, one message →</a></p>
+      </div>
+    </section>
+
+    <section id="new">
+      <div class="wrap">
+        <h2>New in 0.1.5</h2>
+        <p class="section-lead">What the four sessions above rely on.</p>
+        <div class="grid three">
+          <div class="card">
+            <h3>Append screenshots</h3>
+            <p>Turn it on for a reference in Inspector, then capture another tab, another app or the next version. Each capture adds a shot, and the numbers keep counting: 1 and 2 on the listing, 3, 4 and 5 on the contract.</p>
+          </div>
+          <div class="card">
+            <h3>A note for each number</h3>
+            <p>Click a numbered badge and type what you mean. The note stays with its mark while you look at other things. Closing the note saves it and copies the reference link.</p>
+          </div>
+          <div class="card">
+            <h3>One link carries it all</h3>
+            <p>An agent on the same Mac reads every shot, mark and note from one local link. For a web chat, pick the shot you need in Inspector and copy its marked image.</p>
+          </div>
+        </div>
+        <p class="note">Hide Marks and Show Marks turn all saved marks off and on without deleting anything. <a href="https://github.com/amingclawdev/seethis/blob/main/docs/USAGE.md">Usage guide</a></p>
       </div>
     </section>
 
@@ -110,17 +163,17 @@
           <div class="card">
             <span class="step-num">1</span>
             <h3>Hold the shortcut and mark</h3>
-            <p>Hold <kbd>⌥</kbd> <kbd>A</kbd> to turn on marking, then drag around what you mean with the left mouse button, or with three fingers on a trackpad, in any app or window. Keep holding <kbd>⌥</kbd> <kbd>A</kbd> to add more marks to the same reference. In Google Chrome, marks remember their tab and page.</p>
+            <p>Hold <kbd>⌥</kbd> <kbd>A</kbd> and drag around what you mean with the left mouse button, or with three fingers on a trackpad, in any app or window. Keep holding to add more marks. Each one gets a number. In Google Chrome, marks remember their tab and page.</p>
           </div>
           <div class="card">
             <span class="step-num">2</span>
             <h3>Release to get a reference</h3>
-            <p>Release <kbd>⌥</kbd> <kbd>A</kbd> to finish. A local reference link is copied to your clipboard automatically, ready for agents on the same Mac, such as Claude Code or Codex. For web chats, copy the marked image from Inspector.</p>
+            <p>Release <kbd>⌥</kbd> <kbd>A</kbd>. A local reference link is copied to your clipboard automatically. Need another tab or app in the same request? Turn on Append screenshots in Inspector and mark again.</p>
           </div>
           <div class="card">
             <span class="step-num">3</span>
             <h3>Paste and ask</h3>
-            <p>Paste the reference into your agent with a short message. Write numbers next to your marks and say “1: …, 2: …”, so the agent can match your words to each point.</p>
+            <p>Add a note to any number, or just write “1: …, 2: …” in your message. Agents on the same Mac, such as Claude Code or Codex, read the link. For web chats, copy the marked image from Inspector.</p>
           </div>
         </div>
       </div>
@@ -134,14 +187,14 @@
             <p class="section-lead">References are saved on your Mac with their source app and time. Open Inspector and choose a reference that has not expired or been deleted.</p>
             <ul class="checks">
               <li>Copy its link again to use it in a new agent session.</li>
-              <li>Copy the marked image for web chats.</li>
-              <li>View the details, or delete references you no longer need.</li>
+              <li>Edit its notes, then send the same link again.</li>
+              <li>Copy a marked image for web chats, view the details, or delete references you no longer need.</li>
             </ul>
             <p class="note">Default limits: 7-day retention and up to 500 searchable references. Change them in Open Settings… → Reference access.</p>
           </div>
           <figure class="shot cutout">
             <img src="/assets/inspector-references.png" width="1165" height="1465" loading="lazy" alt="SeeThis Inspector with its reference list open: entries such as Google Chrome, ChatGPT and Claude, each with a date and time, plus Copy JSON URL, Copy marked image, View details and Delete buttons.">
-            <figcaption>The Inspector reference list from real use, October 13–15, 2026. One entry is cropped out for privacy.</figcaption>
+            <figcaption>The Inspector reference list from real use, October 13–15, 2026, in an earlier version. One entry is cropped out for privacy.</figcaption>
           </figure>
         </div>
       </div>
@@ -150,7 +203,7 @@
     <section id="why">
       <div class="wrap">
         <h2>Why not just a screenshot?</h2>
-        <p class="section-lead">You can always take a screenshot and type a description. SeeThis is for when that gets slow: several points at once, small details, or the same spot again later.</p>
+        <p class="section-lead">You can always take a screenshot and type a description. SeeThis is for when that gets slow: several points at once, small details, several apps, or the same spot again later.</p>
         <div class="table-scroll">
           <table class="compare">
             <thead><tr><th>Approach</th><th>Where it works</th><th>How the AI knows what you mean</th></tr></thead>
@@ -173,6 +226,7 @@
             <li>SeeThis does not upload your screen to a cloud service.</li>
             <li>Reference URLs use <code>127.0.0.1</code>, so they only work for tools on the same Mac while SeeThis is running.</li>
             <li>A capture includes the whole selected display. Marks are not a privacy crop, so hide private windows first and check the image before you share it.</li>
+            <li>A reference can include the window title and, in Chrome, the page URL.</li>
           </ul>
           <p class="note"><a href="https://github.com/amingclawdev/seethis/blob/main/PRIVACY.md">Privacy details</a></p>
         </div>
@@ -182,7 +236,7 @@
             <li>A Mac with Apple Silicon, macOS 14.2 or later.</li>
             <li><strong>Input Monitoring</strong>, so SeeThis can see the shortcut while another app is in front, and <strong>Screen Recording</strong>, to capture what you marked.</li>
             <li>Optional: Automation access to Google Chrome, for tab and page context.</li>
-            <li>Choose the <a href="/download/">App Store version or GitHub beta</a>. Both are available for download.</li>
+            <li>SeeThis 0.1.5 from GitHub, or the Mac App Store version, where 0.1.5 is in review. See the <a href="/download/">download options</a>.</li>
           </ul>
         </div>
       </div>
@@ -192,12 +246,12 @@
       <div class="wrap">
         <h2>FAQ</h2>
         <details><summary>Is SeeThis free?</summary><p>Yes. SeeThis is open source under the MIT license.</p></details>
-        <details><summary>Which AI tools does it work with?</summary><p>Agents running on the same Mac, such as Claude Code or Codex, can read the local reference URL directly. For web chats and remote assistants, paste or attach the marked image.</p></details>
+        <details><summary>Which AI tools does it work with?</summary><p>Agents running on the same Mac, such as Claude Code or Codex, can read the local reference URL directly, including every shot, mark and note. For web chats and remote assistants, such as ChatGPT in the browser, paste or attach the marked image.</p></details>
+        <details><summary>Where can I get 0.1.5?</summary><p>Download it from GitHub now, as a signed and notarized DMG or ZIP: see the <a href="/download/#github">download page</a>. On the Mac App Store, 0.1.5 is in review; until Apple approves it, the Store has version 0.1.1.</p></details>
         <details><summary>Can I draw with a trackpad?</summary><p>Yes. Hold <kbd>⌥</kbd> <kbd>A</kbd>, then click and drag, or use three-finger drag if it is turned on in System Settings → Accessibility → Pointer Control → Trackpad Options.</p></details>
-        <details><summary>Does it work on Intel Macs or Windows?</summary><p>Not yet. SeeThis 0.1.1 is for Apple Silicon Macs on macOS 14.2 or later.</p></details>
-        <details><summary>Which version should I install?</summary><p>Get version 0.1.1 from the Mac App Store, or choose the signed and notarized GitHub beta as a direct DMG or ZIP download. <a href="/download/">Check both download options</a>.</p></details>
-        <details><summary>How do updates work?</summary><p>For the GitHub version, download updates manually from <a href="https://github.com/amingclawdev/seethis/releases">GitHub releases</a>; it has no automatic updater. Install and update the App Store version through the Mac App Store.</p></details>
-        <details><summary>Will my beta references move to the App Store version?</summary><p>The App Store version keeps its own local data. It does not automatically import the GitHub version’s references or settings, and permissions may need to be granted again. Keep any images you need before switching, and quit the old copy before opening the other version. <a href="/download/#switching">Switching versions →</a></p></details>
+        <details><summary>Does it work on Intel Macs or Windows?</summary><p>Not yet. SeeThis 0.1.5 is for Apple Silicon Macs on macOS 14.2 or later.</p></details>
+        <details><summary>How do updates work?</summary><p>Install and update the App Store version through the Mac App Store. The GitHub version has no automatic updater; download new releases manually from <a href="https://github.com/amingclawdev/seethis/releases">GitHub releases</a>.</p></details>
+        <details><summary>Will my GitHub references move to the App Store version?</summary><p>The App Store version keeps its own local data. It does not automatically import the GitHub version’s references or settings, and permissions may need to be granted again. Keep any images you need before switching, and quit the old copy before opening the other version. <a href="/download/#switching">Switching versions →</a></p></details>
         <details><summary>How long are references saved?</summary><p>The defaults are 7-day retention and up to 500 searchable references. Adjust these in Open Settings… → Reference access. Expired or deleted references cannot be reused through their local links.</p></details>
         <details><summary>How do I give feedback?</summary><p>Choose Feedback… in the menu bar to open an email draft, or open an issue on <a href="https://github.com/amingclawdev/seethis/issues">GitHub</a>.</p></details>
       </div>
@@ -206,8 +260,8 @@
     <section>
       <div class="wrap">
         <h2>Try it on your next review</h2>
-        <p class="section-lead">Mark two places, add 1 and 2, and send your AI one short message.</p>
-        <div class="cta"><a class="btn" href="https://apps.apple.com/us/app/seethis-visual-context/id6818581322">Download on the Mac App Store</a><a class="btn ghost" href="https://github.com/amingclawdev/seethis">View on GitHub</a></div>
+        <p class="section-lead">Mark two places, add a note to each, and send your AI one link.</p>
+        <div class="cta"><a class="btn" href="/download/#github">Download SeeThis 0.1.5</a><a class="btn ghost" href="https://github.com/amingclawdev/seethis">View on GitHub</a></div>
       </div>
     </section>
   </main>
