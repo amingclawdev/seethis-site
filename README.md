@@ -13,7 +13,7 @@ Static website for [SeeThis](https://github.com/amingclawdev/seethis), served at
 
 ## Release state
 
-The site describes **0.1.5** (updated October 28, 2026). GitHub release **v0.1.5** (https://github.com/amingclawdev/seethis/releases/tag/v0.1.5) is published; the download page links its DMG, ZIP and SHA256SUMS. On the Mac App Store, 0.1.5 is in review; the public listing, **SeeThis: Visual Context** (https://apps.apple.com/us/app/seethis-visual-context/id6818581322), still has **0.1.1** until it is approved.
+The site describes **0.1.5** (updated October 29, 2026) on both channels. GitHub release **v0.1.5** (https://github.com/amingclawdev/seethis/releases/tag/v0.1.5) is published; the download page links its DMG, ZIP and SHA256SUMS. On the Mac App Store, 0.1.5 was released on October 29, 2026; the listing, **SeeThis: Show AI What You Mean** (https://apps.apple.com/us/app/seethis-visual-context/id6818581322), has **0.1.5**. The home page buttons go to the Store listing; the download page offers both.
 
 The four scenario videos in `assets/scenarios/` are the v3 16:9 story masters from the SeeThis promo project with its music and sound-effects mix (Mixkit, free license; reference access keys hidden), saved with `+faststart`; the posters are frames from the same files. When a video changes, bump the `?v=` query on its links in `index.html`: `/assets/*` is cached for 7 days.
 
